@@ -10,7 +10,6 @@
 body
 {
 	background: #0a2a43;
-	min-height: 200vmax;	
 }
 
 section
@@ -18,6 +17,7 @@ section
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	margin-bottom: 100vh;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
