@@ -3,6 +3,7 @@
 <head>
 	<title>Moon Light Parallax Effects | Vanilla Javascript</title>
 	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<section>
@@ -21,10 +22,10 @@
 		
 		window.addEventListener('scroll', function(){
 			let value = window.scrollY;
-			let height = window.innerHeight;
+			let width = window.innerWidth;
 
 			bg.style.top = value * 0.5 + 'px';
-			moon.style.left = -value * 0.5 + 'px';
+            moon.style.right = width*0.16 + value * 0.5 + 'px';
 			mountain.style.top = -value * 0.15 + 'px';
 			road.style.top = value * 0.15 + 'px';
 			text.style.top = value * 1 + 'px';
